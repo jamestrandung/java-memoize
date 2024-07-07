@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40bbdd3f-0a7d-46fb-a140-87f163f50f13" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/EnableMemoize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/ExecutionContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/Functions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/LocalResultCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/Memoize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/MemoizeConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/Memoized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/ResultCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/test/groovy/com/github/jamestrandung/memoize/LocalResultCacheTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/test/groovy/com/github/jamestrandung/memoize/MemoizeAspectTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/test/groovy/com/github/jamestrandung/memoize/MemoizeTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/src/test/groovy/com/github/jamestrandung/memoize/ResultCacheTest.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/target/surefire-reports/TEST-com.github.jamestrandung.memoize.LocalResultCacheTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/target/surefire-reports/TEST-com.github.jamestrandung.memoize.MemoizeAspectTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/target/surefire-reports/TEST-com.github.jamestrandung.memoize.MemoizeTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/target/surefire-reports/TEST-com.github.jamestrandung.memoize.ResultCacheTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/github/jamestrandung/samples/MultiThreadingSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/github/jamestrandung/samples/NoAnnotationSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/github/jamestrandung/samples/WithAnnotationSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/github/jamestrandung/samples/WithAnnotationSpringApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/resources/log4j2.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/target/classes/log4j2.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ir86C112qMg0eseHKjeMwp6KfD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.MultiThreadingSample.executor": "Run",
+    "Application.NoAnnotation (1).executor": "Run",
+    "Application.NoAnnotation.executor": "Run",
+    "Application.NoAnnotationSample.executor": "Run",
+    "Application.com.github.jamestrandung.NoAnnotation.executor": "Run",
+    "JUnit.All in java-memoize-sample.executor": "Run",
+    "JUnit.All in memoize (1).executor": "Run",
+    "JUnit.All in memoize (2).executor": "Run",
+    "JUnit.All in memoize (3).executor": "Run",
+    "JUnit.All in memoize.executor": "Run",
+    "JUnit.MemoizeTest.executor": "Run",
+    "JUnit.MemoizeTest.test execute, LocalResultCache was NOT initialize.executor": "Run",
+    "JUnit.ResultCacheTest.executor": "Run",
+    "JUnit.ResultCacheTest.test get.executor": "Run",
+    "JUnit.TrialTest.executor": "Run",
+    "Maven.java-memoize [clean,install].executor": "Run",
+    "Maven.java-memoize-sample [clean,install].executor": "Run",
+    "Maven.memoize-repo [clean,install].executor": "Run",
+    "Maven.memoize-repo [clean].executor": "Run",
+    "Maven.memoize-repo [compile].executor": "Run",
+    "Maven.memoize-repo [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.WithAnnotation.executor": "Run",
+    "Spring Boot.WithAnnotationSpringApp.executor": "Run",
+    "code.cleanup.on.save": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/james.tran/Desktop/development/java/java-memoize",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MemoizeTest">
+    <configuration name="All in memoize (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="memoize" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MemoizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="memoize" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.jamestrandung.memoize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.jamestrandung.memoize" />
+      <option name="MAIN_CLASS_NAME" value="com.github.jamestrandung.memoize.MemoizeTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MemoizeTest.test execute, LocalResultCache was NOT initialize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="memoize" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.jamestrandung.memoize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.jamestrandung.memoize" />
+      <option name="MAIN_CLASS_NAME" value="com.github.jamestrandung.memoize.MemoizeTest" />
+      <option name="METHOD_NAME" value="test execute, LocalResultCache was NOT initialize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ResultCacheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="memoize" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.jamestrandung.memoize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.jamestrandung.memoize" />
+      <option name="MAIN_CLASS_NAME" value="com.github.jamestrandung.memoize.ResultCacheTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ResultCacheTest.test get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="memoize" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.jamestrandung.memoize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.jamestrandung.memoize" />
+      <option name="MAIN_CLASS_NAME" value="com.github.jamestrandung.memoize.ResultCacheTest" />
+      <option name="METHOD_NAME" value="test get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="java-memoize" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="java-memoize" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MemoizeTest" />
+        <item itemvalue="JUnit.MemoizeTest.test execute, LocalResultCache was NOT initialize" />
+        <item itemvalue="JUnit.ResultCacheTest.test get" />
+        <item itemvalue="JUnit.ResultCacheTest" />
+        <item itemvalue="JUnit.All in memoize (3)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40bbdd3f-0a7d-46fb-a140-87f163f50f13" name="Changes" comment="" />
+      <created>1720237158994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720237158994</updated>
+      <workItem from="1720237160026" duration="1639000" />
+      <workItem from="1720252257749" duration="11846000" />
+      <workItem from="1720266497810" duration="21142000" />
+      <workItem from="1720337112125" duration="48000" />
+      <workItem from="1720337163988" duration="58000" />
+      <workItem from="1720337236997" duration="346000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
