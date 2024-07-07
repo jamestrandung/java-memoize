@@ -28,7 +28,7 @@
   <dependencies>
     <dependency>
       <artifactId>java-memoize</artifactId>
-      <groupId>com.github.jamestrandung</groupId>
+      <groupId>io.github.jamestrandung</groupId>
     </dependency>
 
     <!-- EXTERNAL DEPENDENCY - START -->
@@ -64,8 +64,8 @@
 
   <parent>
     <artifactId>memoize-repo</artifactId>
-    <groupId>com.github.jamestrandung</groupId>
-    <version>1.0.0-RELEASE</version>
+    <groupId>io.github.jamestrandung</groupId>
+    <version>0.1.0-RELEASE</version>
   </parent>
 
   <properties>

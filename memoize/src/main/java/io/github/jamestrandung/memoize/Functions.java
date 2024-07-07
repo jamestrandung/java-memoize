@@ -1,4 +1,4 @@
-package com.github.jamestrandung.memoize;
+package io.github.jamestrandung.memoize;
 
 public class Functions {
   private Functions() {

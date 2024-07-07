@@ -1,9 +1,9 @@
-package com.github.jamestrandung.samples;
+package io.github.jamestrandung.samples;
 
-import com.github.jamestrandung.memoize.Functions.FunctionIdentity;
-import com.github.jamestrandung.memoize.Memoize;
-import com.github.jamestrandung.memoize.MemoizeScope;
-import com.github.jamestrandung.memoize.ResultCache;
+import io.github.jamestrandung.memoize.Functions.FunctionIdentity;
+import io.github.jamestrandung.memoize.Memoize;
+import io.github.jamestrandung.memoize.MemoizeScope;
+import io.github.jamestrandung.memoize.ResultCache;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

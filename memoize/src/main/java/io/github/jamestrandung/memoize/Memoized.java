@@ -1,4 +1,4 @@
-package com.github.jamestrandung.memoize;
+package io.github.jamestrandung.memoize;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -18,11 +18,11 @@ import org.aspectj.lang.annotation.Pointcut;
 public @interface Memoized {
   @Aspect
   class MemoizeAspect {
-    @Pointcut("execution(* *(..)) && @target(com.github.jamestrandung.memoize.Memoized)")
+    @Pointcut("execution(* *(..)) && @target(io.github.jamestrandung.memoize.Memoized)")
     public void methodInMemoizedType() {
     }
 
-    @Pointcut("execution(@com.github.jamestrandung.memoize.Memoized * *.*(..))")
+    @Pointcut("execution(@io.github.jamestrandung.memoize.Memoized * *.*(..))")
     public void methodAnnotatedWithMemoized() {
     }
 

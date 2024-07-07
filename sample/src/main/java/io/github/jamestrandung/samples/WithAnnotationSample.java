@@ -1,7 +1,7 @@
-package com.github.jamestrandung.samples;
+package io.github.jamestrandung.samples;
 
-import com.github.jamestrandung.memoize.MemoizeScope;
-import com.github.jamestrandung.memoize.Memoized;
+import io.github.jamestrandung.memoize.MemoizeScope;
+import io.github.jamestrandung.memoize.Memoized;
 import javax.annotation.PreDestroy;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;

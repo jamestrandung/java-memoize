@@ -1,8 +1,8 @@
-package com.github.jamestrandung.samples;
+package io.github.jamestrandung.samples;
 
-import com.github.jamestrandung.memoize.Functions.FunctionIdentity;
-import com.github.jamestrandung.memoize.Memoize;
-import com.github.jamestrandung.memoize.MemoizeScope;
+import io.github.jamestrandung.memoize.Functions.FunctionIdentity;
+import io.github.jamestrandung.memoize.Memoize;
+import io.github.jamestrandung.memoize.MemoizeScope;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

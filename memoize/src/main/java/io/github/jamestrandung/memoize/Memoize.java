@@ -1,13 +1,13 @@
-package com.github.jamestrandung.memoize;
+package io.github.jamestrandung.memoize;
 
-import com.github.jamestrandung.memoize.Functions.Func;
-import com.github.jamestrandung.memoize.Functions.Func1;
-import com.github.jamestrandung.memoize.Functions.Func2;
-import com.github.jamestrandung.memoize.Functions.Func3;
-import com.github.jamestrandung.memoize.Functions.Func4;
-import com.github.jamestrandung.memoize.Functions.Func5;
-import com.github.jamestrandung.memoize.Functions.Func6;
-import com.github.jamestrandung.memoize.Functions.FunctionIdentity;
+import io.github.jamestrandung.memoize.Functions.Func;
+import io.github.jamestrandung.memoize.Functions.Func1;
+import io.github.jamestrandung.memoize.Functions.Func2;
+import io.github.jamestrandung.memoize.Functions.Func3;
+import io.github.jamestrandung.memoize.Functions.Func4;
+import io.github.jamestrandung.memoize.Functions.Func5;
+import io.github.jamestrandung.memoize.Functions.Func6;
+import io.github.jamestrandung.memoize.Functions.FunctionIdentity;
 
 public class Memoize {
   private Memoize() {
