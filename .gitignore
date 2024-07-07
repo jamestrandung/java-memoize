@@ -1,7 +1,9 @@
 # Compiled class file
 *.class
 /target
-.idea
+.idea/*
+memoize/target
+sample/target
 
 # Log file
 *.log

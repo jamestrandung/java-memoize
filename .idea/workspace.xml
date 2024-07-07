@@ -5,50 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40bbdd3f-0a7d-46fb-a140-87f163f50f13" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/EnableMemoize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/ExecutionContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/Functions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/LocalResultCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/Memoize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/MemoizeConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/Memoized.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/main/java/com/github/jamestrandung/memoize/ResultCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/test/groovy/com/github/jamestrandung/memoize/LocalResultCacheTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/test/groovy/com/github/jamestrandung/memoize/MemoizeAspectTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/test/groovy/com/github/jamestrandung/memoize/MemoizeTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/src/test/groovy/com/github/jamestrandung/memoize/ResultCacheTest.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/target/surefire-reports/TEST-com.github.jamestrandung.memoize.LocalResultCacheTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/target/surefire-reports/TEST-com.github.jamestrandung.memoize.MemoizeAspectTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/target/surefire-reports/TEST-com.github.jamestrandung.memoize.MemoizeTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memoize/target/surefire-reports/TEST-com.github.jamestrandung.memoize.ResultCacheTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/github/jamestrandung/samples/MultiThreadingSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/github/jamestrandung/samples/NoAnnotationSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/github/jamestrandung/samples/WithAnnotationSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/github/jamestrandung/samples/WithAnnotationSpringApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/resources/log4j2.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/target/classes/log4j2.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +211,7 @@
       <workItem from="1720266497810" duration="21142000" />
       <workItem from="1720337112125" duration="48000" />
       <workItem from="1720337163988" duration="58000" />
-      <workItem from="1720337236997" duration="346000" />
+      <workItem from="1720337236997" duration="384000" />
     </task>
     <servers />
   </component>
