@@ -87,7 +87,7 @@ public class Memoize {
   }
 
   static <R> R execute(ExecutionContext context, ThrowingSupplier<R> resultSupplier) {
-    ResultCache cache = LocalResultCache.get();
+    ResultCache cache = MemoizeScope.get();
     if (cache == null) {
       try {
         return resultSupplier.get();

@@ -13,10 +13,10 @@ class MemoizeTest extends Specification {
 
     def cleanup() {
         cache.clear()
-        LocalResultCache.close()
+        MemoizeScope.close()
     }
 
-    def "test execute, LocalResultCache was NOT initialized"() {
+    def "test execute, MemoizeScope was NOT initialized"() {
         when: "supplier completes successfully"
         def result = Memoize.execute(context, supplier)
 
@@ -33,9 +33,9 @@ class MemoizeTest extends Specification {
         thrown(RuntimeException)
     }
 
-    def "test execute, LocalResultCache was initialized, ResultCache returns an exception"() {
+    def "test execute, MemoizeScope was initialized, ResultCache returns an exception"() {
         given:
-        LocalResultCache.reuse(cache)
+        MemoizeScope.reuse(cache)
 
         when:
         Memoize.execute(context, failingSupplier)
@@ -47,9 +47,9 @@ class MemoizeTest extends Specification {
         thrown(RuntimeException)
     }
 
-    def "test execute, LocalResultCache was initialized, ResultCache returns ResultCache.NULL"() {
+    def "test execute, MemoizeScope was initialized, ResultCache returns ResultCache.NULL"() {
         given:
-        LocalResultCache.reuse(cache)
+        MemoizeScope.reuse(cache)
 
         when:
         def result = Memoize.execute(context, supplier)
@@ -61,9 +61,9 @@ class MemoizeTest extends Specification {
         result == null
     }
 
-    def "test execute, LocalResultCache was initialized, ResultCache returns a value"() {
+    def "test execute, MemoizeScope was initialized, ResultCache returns a value"() {
         given:
-        LocalResultCache.reuse(cache)
+        MemoizeScope.reuse(cache)
 
         when:
         def result = Memoize.execute(context, supplier)

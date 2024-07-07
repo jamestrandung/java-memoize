@@ -5,6 +5,11 @@ import com.github.benmanes.caffeine.cache.Caffeine;
 import java.time.Duration;
 import java.util.function.Supplier;
 
+/**
+ * ResultCache takes advantage of Caffeine cache to capture the result of method execution as well as to provide the single-flight
+ * guarantee in multi-threading environments (i.e. if multiple threads attempt to execute the same method with the same set of
+ * arguments at the same time, only one thread will actually perform the logic while other threads will just wait for the result).
+ */
 public class ResultCache {
   /*
   Since Caffeine doesn't accept NULL as a valid value, we need a

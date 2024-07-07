@@ -1,12 +1,12 @@
 package com.github.jamestrandung.samples;
 
-import com.github.jamestrandung.memoize.LocalResultCache;
+import com.github.jamestrandung.memoize.MemoizeScope;
 import com.github.jamestrandung.memoize.Memoized;
 import javax.annotation.PreDestroy;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Slf4j
@@ -15,7 +15,6 @@ public class WithAnnotationSample {
   @Autowired
   MemoizedType memoizedType;
   @Autowired
-  @Qualifier("rawType")
   RawType rawType;
   @Autowired
   AnotherMemoizedType anotherMemoizedType;
@@ -29,12 +28,12 @@ public class WithAnnotationSample {
   @PreDestroy
   public void kafkaListenerMethod() {
     try {
-      LocalResultCache.initialize();
+      MemoizeScope.initialize();
 
       this.callServiceImplementation();
 
     } finally {
-      LocalResultCache.close();
+      MemoizeScope.close();
     }
   }
 
@@ -82,7 +81,8 @@ public class WithAnnotationSample {
   public static class AnotherMemoizedType extends RawType {
   }
 
-  @Component("rawType")
+  @Primary
+  @Component
   public static class RawType {
     public String doSomething(String text) {
       log.info("Get printed 3 times by RawType and only once by AnotherMemoizedType");

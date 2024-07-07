@@ -1,8 +1,8 @@
 package com.github.jamestrandung.samples;
 
 import com.github.jamestrandung.memoize.Functions.FunctionIdentity;
-import com.github.jamestrandung.memoize.LocalResultCache;
 import com.github.jamestrandung.memoize.Memoize;
+import com.github.jamestrandung.memoize.MemoizeScope;
 import com.github.jamestrandung.memoize.ResultCache;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,12 +18,12 @@ public class MultiThreadingSample {
   //  @GetMapping("/imaginary-rest-endpoint-with-threads")
   static void restControllerMethod() {
     try {
-      LocalResultCache.initialize();
+      MemoizeScope.initialize();
 
       callServiceImplementation();
 
     } finally {
-      LocalResultCache.close();
+      MemoizeScope.close();
     }
   }
 
@@ -37,19 +37,19 @@ public class MultiThreadingSample {
   }
 
   static void spawnThreads() {
-    ResultCache cache = LocalResultCache.get();
+    ResultCache cache = MemoizeScope.get();
 
     List<CompletableFuture<Void>> futures = new ArrayList<>();
     for (int i = 0; i < 10; i++) {
       CompletableFuture<Void> future = CompletableFuture.supplyAsync(() -> {
             try {
               // Reuse all results computed by parent and other threads
-              LocalResultCache.reuse(cache);
+              MemoizeScope.reuse(cache);
 
               return performThreadLogic();
 
             } finally {
-              LocalResultCache.close();
+              MemoizeScope.close();
             }
           })
           .thenAccept(result -> {

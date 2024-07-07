@@ -2,8 +2,15 @@ package com.github.jamestrandung.memoize;
 
 import java.util.Arrays;
 import java.util.Objects;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
 
+/**
+ * ExecutionContext takes target method's arguments into account. Hence, if one or more parameters are POJO, those POJOs must handle
+ * equal() and hashCode() properly so that the context of each target method invocation can be recorded & compared correctly.
+ *
+ * @param targetClass
+ * @param targetMethod
+ * @param arguments
+ */
 public record ExecutionContext(Class<?> targetClass, String targetMethod, Object[] arguments) {
   private static final String TEMPLATE = "%s.%s(%s)";
 
@@ -30,7 +37,13 @@ public record ExecutionContext(Class<?> targetClass, String targetMethod, Object
 
   @Override
   public int hashCode() {
-    return HashCodeBuilder.reflectionHashCode(this);
+    int result = 1;
+
+    result = 31 * result + (this.targetClass == null ? 0 : this.targetClass.hashCode());
+    result = 31 * result + (this.targetMethod == null ? 0 : this.targetMethod.hashCode());
+    result = 31 * result + (this.arguments == null ? 0 : Arrays.hashCode(this.arguments));
+
+    return result;
   }
 
   @Override

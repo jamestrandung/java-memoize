@@ -1,8 +1,8 @@
 package com.github.jamestrandung.samples;
 
 import com.github.jamestrandung.memoize.Functions.FunctionIdentity;
-import com.github.jamestrandung.memoize.LocalResultCache;
 import com.github.jamestrandung.memoize.Memoize;
+import com.github.jamestrandung.memoize.MemoizeScope;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -14,12 +14,12 @@ public class NoAnnotationSample {
   //  @GetMapping("/imaginary-rest-endpoint")
   static void restControllerMethod() {
     try {
-      LocalResultCache.initialize();
+      MemoizeScope.initialize();
 
       callServiceImplementation();
 
     } finally {
-      LocalResultCache.close();
+      MemoizeScope.close();
     }
   }
 

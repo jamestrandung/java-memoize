@@ -9,6 +9,10 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 
+/**
+ * This annotation marks a type or a method as a candidate for memoization so that repeated executions of the annotated method and of
+ * any Spring-proxied methods of the annotated type will not run more than once per memoize scope.
+ */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Memoized {

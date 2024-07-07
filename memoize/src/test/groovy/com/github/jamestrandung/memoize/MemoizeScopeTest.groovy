@@ -2,9 +2,9 @@ package com.github.jamestrandung.memoize
 
 import spock.lang.Specification
 
-class LocalResultCacheTest extends Specification {
+class MemoizeScopeTest extends Specification {
     def cleanup() {
-        LocalResultCache.close()
+        MemoizeScope.close()
     }
 
     def "test reuse"() {
@@ -13,40 +13,40 @@ class LocalResultCacheTest extends Specification {
         def another = new ResultCache()
 
         when:
-        LocalResultCache.reuse(null)
+        MemoizeScope.reuse(null)
 
         then:
         thrown(IllegalArgumentException)
 
         when:
-        LocalResultCache.reuse(cache)
+        MemoizeScope.reuse(cache)
 
         then:
         noExceptionThrown()
-        LocalResultCache.get() == cache
+        MemoizeScope.get() == cache
 
         when:
-        LocalResultCache.reuse(another)
+        MemoizeScope.reuse(another)
 
         then:
         noExceptionThrown()
-        LocalResultCache.get() == another
+        MemoizeScope.get() == another
     }
 
     def "test close"() {
         expect:
-        LocalResultCache.get() == null
+        MemoizeScope.get() == null
 
         when:
-        LocalResultCache.initialize()
+        MemoizeScope.initialize()
 
         then:
-        LocalResultCache.get() != null
+        MemoizeScope.get() != null
 
         when:
-        LocalResultCache.close()
+        MemoizeScope.close()
 
         then:
-        LocalResultCache.get() == null
+        MemoizeScope.get() == null
     }
 }
