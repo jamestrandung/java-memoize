@@ -5,13 +5,13 @@ import java.util.Objects;
 
 /**
  * ExecutionContext takes target method's arguments into account. Hence, if one or more parameters are POJO, those POJOs must handle
- * equal() and hashCode() properly so that the context of each target method invocation can be recorded & compared correctly.
+ * equal() and hashCode() properly so that the context of each target method invocation can be recorded and compared correctly.
  *
- * @param targetClass
- * @param targetMethod
- * @param arguments
+ * @param declaringType the class that owns the method that is about to be executed
+ * @param methodName    the name of the method that is about to be executed
+ * @param arguments     the arguments for the method that is about to be executed
  */
-public record ExecutionContext(Class<?> targetClass, String targetMethod, Object[] arguments) {
+public record ExecutionContext(Class<?> declaringType, String methodName, Object[] arguments) {
   private static final String TEMPLATE = "%s.%s(%s)";
 
   @Override
@@ -24,11 +24,11 @@ public record ExecutionContext(Class<?> targetClass, String targetMethod, Object
   }
 
   private boolean doEquals(ExecutionContext that) {
-    if (!Objects.equals(this.targetClass, that.targetClass)) {
+    if (!Objects.equals(this.declaringType, that.declaringType)) {
       return false;
     }
 
-    if (!Objects.equals(this.targetMethod, that.targetMethod)) {
+    if (!Objects.equals(this.methodName, that.methodName)) {
       return false;
     }
 
@@ -39,8 +39,8 @@ public record ExecutionContext(Class<?> targetClass, String targetMethod, Object
   public int hashCode() {
     int result = 1;
 
-    result = 31 * result + (this.targetClass == null ? 0 : this.targetClass.hashCode());
-    result = 31 * result + (this.targetMethod == null ? 0 : this.targetMethod.hashCode());
+    result = 31 * result + (this.declaringType == null ? 0 : this.declaringType.hashCode());
+    result = 31 * result + (this.methodName == null ? 0 : this.methodName.hashCode());
     result = 31 * result + (this.arguments == null ? 0 : Arrays.hashCode(this.arguments));
 
     return result;
@@ -48,6 +48,6 @@ public record ExecutionContext(Class<?> targetClass, String targetMethod, Object
 
   @Override
   public String toString() {
-    return String.format(TEMPLATE, this.targetClass.getName(), this.targetMethod, Arrays.toString(this.arguments));
+    return String.format(TEMPLATE, this.declaringType.getName(), this.methodName, Arrays.toString(this.arguments));
   }
 }
