@@ -127,8 +127,8 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <release.version>0.1.0-RELEASE</release.version>
+    <release.version>0.1.1-RELEASE</release.version>
   </properties>
 
-  <version>0.1.0-RELEASE</version>
+  <version>0.1.1-RELEASE</version>
 </project>
