@@ -57,61 +57,61 @@
       </plugin>
 
       <!-- MAVEN PUBLISHING - START -->
-      <!--      <plugin>-->
-      <!--        <artifactId>central-publishing-maven-plugin</artifactId>-->
-      <!--        <configuration>-->
-      <!--          <publishingServerId>central</publishingServerId>-->
-      <!--        </configuration>-->
-      <!--        <extensions>true</extensions>-->
-      <!--        <groupId>org.sonatype.central</groupId>-->
-      <!--        <version>0.5.0</version>-->
-      <!--      </plugin>-->
-      <!--      <plugin>-->
-      <!--        <artifactId>maven-source-plugin</artifactId>-->
-      <!--        <executions>-->
-      <!--          <execution>-->
-      <!--            <goals>-->
-      <!--              <goal>jar</goal>-->
-      <!--            </goals>-->
-      <!--            <id>attach-sources</id>-->
-      <!--          </execution>-->
-      <!--        </executions>-->
-      <!--        <groupId>org.apache.maven.plugins</groupId>-->
-      <!--        <version>3.3.1</version>-->
-      <!--      </plugin>-->
-      <!--      <plugin>-->
-      <!--        <artifactId>maven-javadoc-plugin</artifactId>-->
-      <!--        <executions>-->
-      <!--          <execution>-->
-      <!--            <goals>-->
-      <!--              <goal>jar</goal>-->
-      <!--            </goals>-->
-      <!--            <id>attach-javadocs</id>-->
-      <!--          </execution>-->
-      <!--        </executions>-->
-      <!--        <groupId>org.apache.maven.plugins</groupId>-->
-      <!--        <version>3.7.0</version>-->
-      <!--      </plugin>-->
-      <!--      <plugin>-->
-      <!--        <artifactId>maven-gpg-plugin</artifactId>-->
-      <!--        <executions>-->
-      <!--          <execution>-->
-      <!--            <configuration>-->
-      <!--              <gpgArguments>-->
-      <!--                <arg>&#45;&#45;pinentry-mode</arg>-->
-      <!--                <arg>loopback</arg>-->
-      <!--              </gpgArguments>-->
-      <!--            </configuration>-->
-      <!--            <goals>-->
-      <!--              <goal>sign</goal>-->
-      <!--            </goals>-->
-      <!--            <id>sign-artifacts</id>-->
-      <!--            <phase>verify</phase>-->
-      <!--          </execution>-->
-      <!--        </executions>-->
-      <!--        <groupId>org.apache.maven.plugins</groupId>-->
-      <!--        <version>3.2.4</version>-->
-      <!--      </plugin>-->
+      <plugin>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
+        </configuration>
+        <extensions>true</extensions>
+        <groupId>org.sonatype.central</groupId>
+        <version>0.5.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <id>attach-sources</id>
+          </execution>
+        </executions>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.3.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <id>attach-javadocs</id>
+          </execution>
+        </executions>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.7.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <executions>
+          <execution>
+            <configuration>
+              <gpgArguments>
+                <arg>--pinentry-mode</arg>
+                <arg>loopback</arg>
+              </gpgArguments>
+            </configuration>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+          </execution>
+        </executions>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.2.4</version>
+      </plugin>
       <!-- MAVEN PUBLISHING - END -->
     </plugins>
   </build>
