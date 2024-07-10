@@ -33,16 +33,14 @@
 
     <!-- EXTERNAL DEPENDENCY - START -->
     <dependency>
-      <artifactId>spring-boot</artifactId>
+      <artifactId>spring-boot-starter</artifactId>
+      <exclusions>
+        <exclusion>
+          <artifactId>spring-boot-starter-logging</artifactId>
+          <groupId>org.springframework.boot</groupId>
+        </exclusion>
+      </exclusions>
       <groupId>org.springframework.boot</groupId>
-    </dependency>
-    <dependency>
-      <artifactId>spring-aop</artifactId>
-      <groupId>org.springframework</groupId>
-    </dependency>
-    <dependency>
-      <artifactId>aspectjweaver</artifactId>
-      <groupId>org.aspectj</groupId>
     </dependency>
     <dependency>
       <artifactId>slf4j-api</artifactId>
@@ -51,10 +49,6 @@
     <dependency>
       <artifactId>log4j-slf4j2-impl</artifactId>
       <groupId>org.apache.logging.log4j</groupId>
-    </dependency>
-    <dependency>
-      <artifactId>javax.annotation-api</artifactId>
-      <groupId>javax.annotation</groupId>
     </dependency>
     <!-- EXTERNAL DEPENDENCY - END -->
   </dependencies>

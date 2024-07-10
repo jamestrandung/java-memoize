@@ -3,6 +3,7 @@ package io.github.jamestrandung.samples;
 import io.github.jamestrandung.memoize.MemoizeScope;
 import io.github.jamestrandung.memoize.Memoized;
 import javax.annotation.PreDestroy;
+import lombok.experimental.Delegate;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -78,7 +79,10 @@ public class WithAnnotationSample {
 
   @Memoized
   @Component
-  public static class AnotherMemoizedType extends RawType {
+  public static class AnotherMemoizedType {
+    @Delegate
+    @Autowired
+    RawType rawType;
   }
 
   @Primary
