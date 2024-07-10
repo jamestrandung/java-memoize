@@ -18,7 +18,7 @@ import org.aspectj.lang.annotation.Pointcut;
 public @interface Memoized {
   @Aspect
   class MemoizeAspect {
-    @Pointcut("@target(io.github.jamestrandung.memoize.Memoized) && execution(* *(..))")
+    @Pointcut("@within(io.github.jamestrandung.memoize.Memoized) && execution(* *(..))")
     public void methodInMemoizedType() {
     }
 
