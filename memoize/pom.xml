@@ -3,7 +3,6 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <artifactId>java-memoize</artifactId>
-
   <build>
     <plugins>
       <plugin>
@@ -58,65 +57,64 @@
       </plugin>
 
       <!-- MAVEN PUBLISHING - START -->
-      <plugin>
-        <artifactId>central-publishing-maven-plugin</artifactId>
-        <configuration>
-          <publishingServerId>central</publishingServerId>
-        </configuration>
-        <extensions>true</extensions>
-        <groupId>org.sonatype.central</groupId>
-        <version>0.5.0</version>
-      </plugin>
-      <plugin>
-        <artifactId>maven-source-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-            <id>attach-sources</id>
-          </execution>
-        </executions>
-        <groupId>org.apache.maven.plugins</groupId>
-        <version>3.3.1</version>
-      </plugin>
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-            <id>attach-javadocs</id>
-          </execution>
-        </executions>
-        <groupId>org.apache.maven.plugins</groupId>
-        <version>3.7.0</version>
-      </plugin>
-      <plugin>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <executions>
-          <execution>
-            <configuration>
-              <gpgArguments>
-                <arg>--pinentry-mode</arg>
-                <arg>loopback</arg>
-              </gpgArguments>
-            </configuration>
-            <goals>
-              <goal>sign</goal>
-            </goals>
-            <id>sign-artifacts</id>
-            <phase>verify</phase>
-          </execution>
-        </executions>
-        <groupId>org.apache.maven.plugins</groupId>
-        <version>3.2.4</version>
-      </plugin>
+      <!--      <plugin>-->
+      <!--        <artifactId>central-publishing-maven-plugin</artifactId>-->
+      <!--        <configuration>-->
+      <!--          <publishingServerId>central</publishingServerId>-->
+      <!--        </configuration>-->
+      <!--        <extensions>true</extensions>-->
+      <!--        <groupId>org.sonatype.central</groupId>-->
+      <!--        <version>0.5.0</version>-->
+      <!--      </plugin>-->
+      <!--      <plugin>-->
+      <!--        <artifactId>maven-source-plugin</artifactId>-->
+      <!--        <executions>-->
+      <!--          <execution>-->
+      <!--            <goals>-->
+      <!--              <goal>jar</goal>-->
+      <!--            </goals>-->
+      <!--            <id>attach-sources</id>-->
+      <!--          </execution>-->
+      <!--        </executions>-->
+      <!--        <groupId>org.apache.maven.plugins</groupId>-->
+      <!--        <version>3.3.1</version>-->
+      <!--      </plugin>-->
+      <!--      <plugin>-->
+      <!--        <artifactId>maven-javadoc-plugin</artifactId>-->
+      <!--        <executions>-->
+      <!--          <execution>-->
+      <!--            <goals>-->
+      <!--              <goal>jar</goal>-->
+      <!--            </goals>-->
+      <!--            <id>attach-javadocs</id>-->
+      <!--          </execution>-->
+      <!--        </executions>-->
+      <!--        <groupId>org.apache.maven.plugins</groupId>-->
+      <!--        <version>3.7.0</version>-->
+      <!--      </plugin>-->
+      <!--      <plugin>-->
+      <!--        <artifactId>maven-gpg-plugin</artifactId>-->
+      <!--        <executions>-->
+      <!--          <execution>-->
+      <!--            <configuration>-->
+      <!--              <gpgArguments>-->
+      <!--                <arg>&#45;&#45;pinentry-mode</arg>-->
+      <!--                <arg>loopback</arg>-->
+      <!--              </gpgArguments>-->
+      <!--            </configuration>-->
+      <!--            <goals>-->
+      <!--              <goal>sign</goal>-->
+      <!--            </goals>-->
+      <!--            <id>sign-artifacts</id>-->
+      <!--            <phase>verify</phase>-->
+      <!--          </execution>-->
+      <!--        </executions>-->
+      <!--        <groupId>org.apache.maven.plugins</groupId>-->
+      <!--        <version>3.2.4</version>-->
+      <!--      </plugin>-->
       <!-- MAVEN PUBLISHING - END -->
     </plugins>
   </build>
-
   <dependencies>
     <!-- TEST DEPENDENCY - START -->
     <dependency>
@@ -199,6 +197,8 @@
     </developer>
   </developers>
 
+  <groupId>io.github.jamestrandung</groupId>
+
   <licenses>
     <license>
       <distribution>repo</distribution>
@@ -211,14 +211,9 @@
 
   <packaging>jar</packaging>
 
-  <parent>
-    <artifactId>memoize-repo</artifactId>
-    <groupId>io.github.jamestrandung</groupId>
-    <version>0.1.1-RELEASE</version>
-  </parent>
-
   <properties>
     <java.version>17</java.version>
+    <lombok.version>1.18.24</lombok.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -231,4 +226,6 @@
   </scm>
 
   <url>https://github.com/jamestrandung/java-memoize</url>
+
+  <version>0.1.3-RELEASE</version>
 </project>

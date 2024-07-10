@@ -115,7 +115,6 @@
   <modelVersion>4.0.0</modelVersion>
 
   <modules>
-    <module>memoize</module>
     <module>sample</module>
   </modules>
 
@@ -127,8 +126,8 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <release.version>0.1.1-RELEASE</release.version>
+    <release.version>0.1.3-RELEASE</release.version>
   </properties>
 
-  <version>0.1.1-RELEASE</version>
+  <version>0.1.3-RELEASE</version>
 </project>
